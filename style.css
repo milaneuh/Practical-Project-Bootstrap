@@ -1,11 +1,12 @@
-#logo-occ {
+.logo-occ {
     height:88px;
     width:200px;
 }
-#logo-occ > a > img {
+.logo-occ img {
     height:88px;
     width:200px;
 }
+
 
 nav{
     z-index: 3;
@@ -27,6 +28,129 @@ nav{
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
     color: #FFCD00;
+}
+
+#idLogo{
+    
+    z-index: 3;
+}
+
+svg{
+    height:50px;
+    width:50px;
+}
+
+h4{
+    text-decoration: underline #FFCD00;
+}
+ul {
+    list-style-type: none;
+}
+
+.covid {
+    border-left: solid 3px #FFCD00;
+    padding-left: 10px;
+    position:relative;
+    left:40px;
+}
+
+.covid + ul:last-of-type{
+    list-style-type: square;
+}
+
+/* accordéon */
+.accordion-header {
+    border: 2px lightgrey solid;
+    border-radius: 10%;
+    margin-top: 2%;
+}
+
+/* bottom page */
+#idFooterLinks a{
+    color: rgb(255, 196, 0);
+    text-decoration: none;
+    margin: 2% 0 2% 0;
+}
+
+#idFooterLinks a:hover{
+    text-decoration: underline;
+}   /* bottom page end */
+
+/* Leviosaaa */
+#css {
+    position:fixed;
+    height:50px;
+    width:auto;
+    animation: css_move 10s infinite linear;
+    animation-delay: 1s;
+    z-index:10;
+    visibility:hidden;
+}
+
+#css img{
+    height:50px;
+    width:auto;
+}
+#css2 {
+    position:fixed;
+    height:50px;
+    width:auto;
+    animation: css_move 10s infinite linear;
+    z-index:10;
+    visibility:hidden;
+}
+
+#css2 img{
+    height:50px;
+    width:auto;
+}
+embed {
+    position: absolute;
+    top: -1000in;
+    left: -1000in;
+    display: none;
+}
+  
+button:hover + embed {
+    display: block;
+}
 
 
+/* Leviosaaa end */
 
+#css_banner{
+    animation:banner 3s infinite linear;
+}
+#color_change{
+    animation:colorchange 3s infinite linear;
+}
+
+.rounded-circle:hover{
+    animation:bigger 1s infinite linear;
+    color:black;
+    background-color: white;;
+}
+@keyframes css_move {
+    0%{left:0vw;top:0vh;visibility:visible;}
+    25%{left:95vw;top:0vh;}
+    50%{left:95vw;top:95vh;}
+    75%{left:0vw;top:95vh;}
+    100%{left:0vw;top:0vh;}
+}
+@keyframes banner {
+    0%{transform:rotateY(0deg)}
+    50%{transform:rotateY(180deg)}
+    100%{transform:rotateY(360deg)}
+}
+@keyframes colorchange {
+    0%{color:red}
+    50%{color:yellow}
+    100%{color:red}
+    
+}
+
+@keyframes bigger {
+    0%{transform: scale(100%);}
+    50%{transform: scale(120%)}
+    100%{transform: scale(100%)}
+}
