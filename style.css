@@ -1,0 +1,32 @@
+#logo-occ {
+    height:88px;
+    width:200px;
+}
+#logo-occ > a > img {
+    height:88px;
+    width:200px;
+}
+
+nav{
+    z-index: 3;
+}
+.banner {
+    position:relative;
+    top: -30px;
+    z-index: 1;
+}
+.article {
+    position:relative;
+    top:-60px;
+    background-color: white;
+    z-index:2;
+    padding:0 10%;
+    margin-left: 13%;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #FFCD00;
+
+
+
